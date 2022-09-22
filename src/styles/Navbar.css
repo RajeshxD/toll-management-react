@@ -1,0 +1,210 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.a {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+.b {
+  flex: 1;
+  text-align: center;
+}
+.c {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0 10px;
+}
+
+.c > button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+  margin: 15px;
+  font-weight: 600;
+}
+
+.c > button:hover {
+  color: rgb(152, 217, 233);
+}
+
+.filterdropdown {
+  color: "red";
+}
+
+.dropdowncontainer {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 220px;
+  list-style-type: none;
+  border: 2px solid rgb(250, 248, 248);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(133, 119, 119);
+  width: 100px;
+}
+
+.dropdowncontainer > li:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdowncontainer > li {
+  font-size: large;
+}
+
+.table-container {
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  align-items: center;
+}
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 20px;
+}
+
+th {
+  background-color: rgb(223, 232, 237);
+}
+
+td {
+  background-color: rgb(255, 255, 255);
+}
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200, 0.7);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalContainer {
+  width: 900px;
+  height: 600px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 99999;
+  opacity: 1;
+  transition: opacity 400ms ease-in;
+  pointer-events: auto;
+}
+.container:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.container > div {
+  width: 900px;
+  height: 600px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 5px;
+  background: #ffffff;
+  text-align: left;
+}
+.close {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+.toll-tittle,
+.vehicle-title {
+  font-size: 20px;
+  text-align: center;
+}
+.req {
+  color: red;
+}
+input[type="text"] {
+  width: 50%;
+  padding: 12px 20px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  box-sizing: border-box;
+  width: calc(100% - 30px);
+  border-radius: 10px;
+}
+.close:hover {
+  background: #a193e0;
+}
+
+.vehicleDropdown {
+  display: flex;
+  gap: 10%;
+  margin-bottom: 20px;
+}
+
+.vehicleDropdown > input {
+  border-radius: 5px;
+}
+
+.vehicleDropdown > select {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  font-size: x-large;
+  border-radius: 5px;
+}
+.row-btn {
+  border: 0;
+  text-align: center;
+  padding: 7px;
+  width: 150px;
+  margin-bottom: 24px;
+  color: #ffffff;
+  background-color: #36a2eb;
+  border-radius: 8px;
+  font-family: "proxima-nova-soft", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: box-shadow 200ms ease-out;
+  cursor: pointer;
+  width: calc(100% - 20px);
+}
+select {
+  width: calc(100% - 30px);
+  padding: 0px 20px;
+  height: 50px;
+  border: none;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+}

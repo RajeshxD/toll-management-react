@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Main from "./components/Main";
+import { Routes, Route } from "react-router-dom";
+import AddEntry from "./components/Modals/VehicleEntryModal";
+import AddToll from "./components/Modals/TollEntryModal";
+import TollList from "./components/viewTolls";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/viewlist" element={<TollList />} />
+        <Route path="/addnewvehicle" element={<AddEntry />} />
+        <Route path="/addnewtoll" element={<AddToll />} />
+      </Routes>
     </div>
   );
 }
