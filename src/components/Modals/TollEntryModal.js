@@ -1,5 +1,5 @@
 import "./../../styles/Navbar.css";
-import {useState} from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Main from "../Main";
 
@@ -117,9 +117,10 @@ function AddToll() {
             <div className="vehicleDropdown">
               <select
                 value={vehicleList[0]}
-                onClick={(e) => {
-                  //console.log(e.target.value)
-                }}
+                readOnly
+                // onClick={(e) => {
+                //   //console.log(e.target.value)
+                // }}
               >
                 {vehicleList.map((item, index) => {
                   return <option key={index}>{item}</option>;
@@ -144,7 +145,13 @@ function AddToll() {
             </div>
             {/* Second vehicle start here----------------------------------------------------------------------------------------*/}
             <div className="vehicleDropdown">
-              <select value={vehicleList[1]}>
+              <select
+                value={vehicleList[1]}
+                readOnly
+                // onClick={(e) => {
+                //   //console.log(e.target.value)
+                // }}
+              >
                 {vehicleList.map((item, index) => {
                   return <option key={index}>{item}</option>;
                 })}
@@ -168,7 +175,13 @@ function AddToll() {
             </div>
             {/* Third vehicle start here----------------------------------------------------------------------------------------*/}
             <div className="vehicleDropdown">
-              <select value={vehicleList[2]}>
+              <select
+                value={vehicleList[2]}
+                readOnly
+                // onClick={(e) => {
+                //   //console.log(e.target.value)
+                // }}
+              >
                 {vehicleList.map((item, index) => {
                   return <option key={index}>{item}</option>;
                 })}
@@ -192,7 +205,13 @@ function AddToll() {
             </div>
             {/* Fourth vehicle start here----------------------------------------------------------------------------------------*/}
             <div className="vehicleDropdown">
-              <select value={vehicleList[3]}>
+              <select
+                value={vehicleList[3]}
+                readOnly
+                // onClick={(e) => {
+                //   //console.log(e.target.value)
+                // }}
+              >
                 {vehicleList.map((item, index) => {
                   return <option key={index}>{item}</option>;
                 })}

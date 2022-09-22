@@ -1,7 +1,7 @@
-import MainTab from "./Navbar";
+import Navbar from "./Navbar";
 import React from "react";
 
-function TollList() {
+function ViewTolls() {
   let vechileData = JSON.parse(localStorage.getItem("tollEntries") || " [ ] ");
 
   localStorage.setItem("searchtoll", " [ ] ");
@@ -134,7 +134,7 @@ function TollList() {
 
   return (
     <>
-      <MainTab />
+      <Navbar />
       <div className="table-container">
         <table>
           <thead>
@@ -156,4 +156,4 @@ function TollList() {
   );
 }
 
-export default TollList;
+export default ViewTolls;

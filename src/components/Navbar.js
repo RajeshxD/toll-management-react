@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
-function MainTab() {
+function Navbar() {
   const [isActive, setIsActive] = useState(false);
 
   const navigate = useNavigate();
@@ -295,4 +295,4 @@ function MainTab() {
   );
 }
 
-export default MainTab;
+export default Navbar;

@@ -3,7 +3,7 @@ import React, { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import Main from "../Main";
 import { useState } from "react";
-function AddEntry() {
+function VehicleEntryModal() {
   let navigate = useNavigate();
 
   const [toll, setToll] = useState("");
@@ -231,4 +231,4 @@ function AddEntry() {
   );
 }
 
-export default AddEntry;
+export default VehicleEntryModal;
