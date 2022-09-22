@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/toll-management-react/static/css/main.5c1f917c.css",
+    "main.js": "/toll-management-react/static/js/main.95c6fc42.js",
+    "static/js/787.4bc29818.chunk.js": "/toll-management-react/static/js/787.4bc29818.chunk.js",
+    "index.html": "/toll-management-react/index.html",
+    "main.5c1f917c.css.map": "/toll-management-react/static/css/main.5c1f917c.css.map",
+    "main.95c6fc42.js.map": "/toll-management-react/static/js/main.95c6fc42.js.map",
+    "787.4bc29818.chunk.js.map": "/toll-management-react/static/js/787.4bc29818.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c1f917c.css",
+    "static/js/main.95c6fc42.js"
+  ]
+}
